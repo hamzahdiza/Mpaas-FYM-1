@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="logo" src="/image/spotify-logo-png-7053.png" />
+  <input class="input" type="text" onInput="handleEmailInput" placeholder="Email" />
+  <input class="input" password type="password" onInput="handlePasswordInput" placeholder="Password" />
+  <button class="button" onTap="handleLogin">Login</button>
+  <text class="signup-text">Don't have an account? Sign up</text>
+</view>

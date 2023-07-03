@@ -1,0 +1,13 @@
+<view class="card-container" >
+  <image class="card-image" src="{{card.media}}" mode="aspectFill"/>
+  <view class="card-content">
+    <text class="card-title" onTap="handleTap" data-link="{{card.link}}">{{card.title}}</text>
+    <view class="card-details">
+      <text class="card-date">{{card.published_date}}</text>
+      <view class="view-container">
+        <image class="view-icon" src="{{card.viewIcon}}" />
+        <text class="card-views">{{card.views}} views</text>
+      </view>
+    </view>
+  </view>
+</view>

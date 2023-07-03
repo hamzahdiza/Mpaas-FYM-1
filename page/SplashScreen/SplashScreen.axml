@@ -1,0 +1,7 @@
+<!-- <pull-down-refresh onRefresh="onPullDownRefresh"> -->
+  <view class="container">
+    <view class="loading">
+      <image class="loader" src="/image/spotify-logo-png-7053.png" />
+    </view>
+  </view>
+    

@@ -1,0 +1,8 @@
+<view class="track-card" data-track_url="{{track.url}}" data-track_image="{{track.album_image_track}}" data-track_title="{{track.name_track}}">
+  <image class="track-image" src="{{track.album_image_track}}"></image>
+  <view class="track-info">
+    <text class="track-title">{{track.name_track}}</text>
+    <text class="track-artist">{{track.artist_name_track}}</text>
+    <view class="play-icon" data-link="{{track.link_track}}" onTap="handleTap"></view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.terms-list {
+  height: 1080rpx;
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  overflow-y: scroll;
+}
+
+.terms-item {
+  margin-bottom: 10rpx;
+}
+
+.checkbox-section {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-left: 10rpx;
+}
+
+.btn-accept {
+  margin: auto;
+  width: 300px;
+  margin-top: 20rpx;
+  color: #fff;
+  background-color: #1CB955;
+  padding: 0px 10px 0px 10px;
+  border-radius: 20rpx;
+  text-align: center;
+  opacity: 1;
+}

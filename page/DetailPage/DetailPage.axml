@@ -1,0 +1,50 @@
+
+
+<view class="card">
+  <view class="header">
+    <image class="profile-image" src="{{ userProfile.image }}"></image>
+    <view class="name">
+      <text class="first-name">{{ userProfile.firstName }}</text>
+      <text class="last-name">{{ userProfile.lastName }}</text>
+    </view>
+  </view>
+  <view class="details">
+    <view class="detail-item">
+      <text class="label">Maiden Name:</text>
+      <text class="value">{{ userProfile.maidenName }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Email:</text>
+      <text class="value">{{ userProfile.email }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Phone:</text>
+      <text class="value">{{ userProfile.phone }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Gender:</text>
+      <text class="value">{{ userProfile.gender }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Birth Date:</text>
+      <text class="value">{{ userProfile.gender }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Address:</text>
+      <text class="value">{{ userProfile.address.address }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Company:</text>
+      <text class="value">{{ userProfile.company.name }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Job Position:</text>
+      <text class="value">{{ userProfile.company.title }}</text>
+    </view>
+    <view class="detail-item">
+      <text class="label">Job Department:</text>
+      <text class="value">{{ userProfile.company.department }}</text>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "",
+  "usingComponents":{
+    "card": "mini-ali-ui/es/card/index",
+    "flex": "mini-ali-ui/es/flex/index",
+    "flex-item": "mini-ali-ui/es/flex/flex-item/index"
+  }
+}

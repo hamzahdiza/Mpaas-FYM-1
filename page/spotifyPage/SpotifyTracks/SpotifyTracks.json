@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "spotify-tracks-card": "/component/spotifyTracksCard/spotifyTracksCard"
+  },
+  "pullRefresh": true
+}

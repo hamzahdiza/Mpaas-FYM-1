@@ -1,0 +1,16 @@
+<!-- <pull-down-refresh onRefresh="onPullDownRefresh"> -->
+  <view class="container">
+    <view class="loading" a:if="{{isLoading}}">
+      <image class="loader" src="/image/spotify-bubble-nobackgorund.gif" />
+      <text></text>
+    </view>
+
+    
+    <view class="card-row" a:if="{{!isLoading}}">
+      <block a:for="{{playlists}}" a:for-item="playlist" >
+        <spotify-card  playlist="{{playlist}}" onMyEvent="handleEventTrack"/>
+      </block>
+    </view>   
+  </view>
+<!-- </pull-down-refresh> -->
+

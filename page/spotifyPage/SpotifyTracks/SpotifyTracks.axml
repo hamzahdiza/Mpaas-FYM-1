@@ -1,0 +1,34 @@
+<!-- <pull-down-refresh onRefresh="onPullDownRefresh"> -->
+  <view class="container">
+    <view class="loading" a:if="{{isLoading}}">
+      <image class="loader" src="/image/spotify-bubble-nobackgorund.gif" />
+      <text></text>
+    </view>
+
+    <view class="playlist-header" a:if="{{!isLoading}}">
+      <image class="playlist-image" src="{{image_playlist}}"/>
+      <text class="playlist-name">{{name_playlist}}</text>
+    </view>
+
+    <view class="search-bar" onTap="toggleSearchFocus" a:if="{{!isLoading}}">
+      <input class="{{searchFocus ? 'search-input-focused' : 'search-input'}}" 
+            type="text" 
+            focus="{{searchFocus}}" 
+            onBlur="toggleSearchFocus" 
+            placeholder="{{searchFocus ? '' : 'Search...'}}" 
+            placeholder-class="placeholder"
+            onInput="handleSearchInput"/>
+      <image onTap="handleSearchButton" class="search-icon" src="/image/play.png" />
+    </view>
+
+
+    <view class="tracks-list" a:if="{{!isLoading}}">
+      
+      <block a:for="{{filteredTracks.length != 0 ? filteredTracks : tracksList}}" a:for-item="track">
+       <spotify-tracks-card track="{{track}}" onMyEvent="handleEventTrack"/>
+      </block>
+
+    </view>
+
+  </view>
+<!-- </pull-down-refresh> -->

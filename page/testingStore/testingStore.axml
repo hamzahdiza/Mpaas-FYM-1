@@ -1,0 +1,6 @@
+<view>
+  <text>NumA: {{numA}}</text>
+  <text>NumB: {{numB}}</text>
+  <text>Sum: {{sum}}</text>
+  <button bindtap="handleUpdate">Update</button>
+</view>

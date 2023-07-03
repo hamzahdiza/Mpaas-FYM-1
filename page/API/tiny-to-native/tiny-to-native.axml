@@ -1,0 +1,7 @@
+<view class="page">
+  <view class="page-section">
+    <view>
+      <button type="primary" onTap="tinyToNative">点击触发自定义API</button>
+    </view>
+  </view>
+</view>

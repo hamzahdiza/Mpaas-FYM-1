@@ -1,0 +1,94 @@
+<!-- <pull-down-refresh onRefresh="onPullDownRefresh"> -->
+  <view class="container">
+    <view class="loading" a:if="{{isLoading}}">
+      <image class="loader" src="/image/loading-spotify-black.gif" />
+      <text></text>
+    </view>
+
+
+    <view class="discover-news-section" a:if="{{!isLoading || !scroll}}">
+      <view class="discover-container">
+        <text class="discover-title">Discover</text>
+        <text class="discover-subtitle">News from all over the world</text>
+
+        <view class="search-bar" onTap="toggleSearchFocus">
+          <input class="{{searchFocus ? 'search-input-focused' : 'search-input'}}" 
+                type="text" 
+                focus="{{searchFocus}}" 
+                onBlur="toggleSearchFocus" 
+                placeholder="{{searchFocus ? '' : 'Search...'}}" 
+                placeholder-class="placeholder"
+                onInput="handleSearchInput"/>
+          <image onTap="handleSearchButton" class="search-icon" src="/image/search-button.png" />
+        </view>
+      </view>
+    </view>
+
+    <view a:if="{{ filteredNews.length === 0 && !isLoading || !scroll}}" > 
+      <view class="tabs {{shadow ? 'shadow' : ''}}" style="top: {{top}}px">
+        <view class="tabs-bar">
+          <block a:for="{{tabs}}">
+            <view class="tabs-bar-tab" data-index="{{index}}" onTap="onTabBarTap">
+              <view class="tabs-bar-tab-title {{activeTab === index ? 'active' : ''}}">{{item}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+      
+
+      <view class="page-container" a:if="{{!isLoading || !scroll}}">
+
+        <view a:if="{{ filteredNews.length === 0 }}"> 
+          <view class="list" a:if="{{ currentTab == 'music' }}">
+            <block a:for="{{musicNews}}" a:for-item="card">
+             <discover-card card="{{card}}" onMyEvent="handleEventTrack"/>
+            </block>
+          </view>
+
+          <view class="list" a:if="{{ currentTab == 'entertainment' }}">
+            <block a:for="{{entertainmentNews}}" a:for-item="card">
+              <discover-card card="{{card}}" onMyEvent="handleEventTrack"/>
+            </block>
+          </view>
+        </view>  
+
+      <!-- Search Result disini -->
+
+        <view class="list" a:if="{{ filteredNews.length != 0}}">
+          <block a:for="{{filteredNews}}" a:for-item="card">
+            <discover-card card="{{card}}"onMyEvent="handleEventTrack"/>
+          </block>
+        </view>
+      </view>
+ 
+
+    <!-- <view class="list-wrap">
+      <view class="list-container" style="{{ transform: 'translate3d(' +(-activeTab * 100) + 'vw, 0, 0)' }}">
+
+        <view class="list" style="{{ height: activeTab === 0 ? 'auto' : 0 }}">
+          <block a:for="{{musicNews}}" a:for-item="news">
+            <view class="news-card" onTap="handleIconTap" data-link="{{news.link}}">
+              <text class="news-title">{{news.title}}</text>
+              <view class="title-base"></view>
+              <image class="news-image" src="{{news.media}}" />
+            </view>
+          </block>
+        </view>
+
+        <view class="list" style="{{ height: activeTab === 1 ? 'auto' : 0 }}">
+          <block a:for="{{entertainmentNews}}" a:for-item="news">
+            <view class="news-card" onTap="handleIconTap" data-link="{{news.link}}">
+              <text class="news-title">{{news.title}}</text>
+              <view class="title-base"></view>
+              <image class="news-image" src="{{news.media}}" />
+            </view>
+          </block>
+        </view>
+
+
+      </view>
+    </view> -->
+
+  </view> 
+<!-- </pull-down-refresh> -->

@@ -1,0 +1,13 @@
+<view class="container">
+  <text class="title">Syarat dan Ketentuan</text>
+  <scroll-view class="terms-list" scroll-y="{{true}}" onScrollToLower="activateCheckbox">
+    <view class="terms-item" a:for="{{syarat_dan_ketentuan}}" a:for-item="item" a:for-index="index">
+      <text class="terms-text">{{index + 1}}. {{item}}</text>
+    </view>
+  </scroll-view>
+  <view class="checkbox-section">
+    <checkbox class="checkbox" checked="{{checked}}" onChange="checkboxChange" disabled="{{!isScrolledToBottom}}"></checkbox>
+    <text class="checkbox-label">Saya telah membaca dan menyetujui semua Syarat dan Ketentuan.</text>
+  </view>
+  <button onTap="acceptTerms" class="btn-accept" disabled="{{!checked}}">Terima Syarat dan Ketentuan</button>
+</view>

@@ -1,0 +1,42 @@
+<!-- <view class="container" scroll-y="{{true}}" onScrollToLower="loadMoreData">
+    <block a:for="{{userList[0].users}}" a:for-item="user">
+      <navigator url="/page/DetailPage/DetailPage?id={{ user.id }}" open-type="navigate">
+          <view class="card" info={{user.id}}>
+            <image mode="scaleToFill" class="user-image" src="{{user.image}}" alt="User Image"/>
+            <view class="card-content">
+              <view class="title">{{user.firstName}} {{user.lastName}}</view>
+              <view class="subTitle">{{user.email}}</view>
+              <view class="info">ID: {{user.id}}</view>
+            </view>
+          </view>
+        </navigator>
+    </block>  
+</view> -->
+
+<view class="container" scroll-y="{{true}}" onScrollToLower="loadMoreData">
+
+  <view class="search-bar">
+    <input class="search-input" placeholder="Cari nama pengguna" onInput="handleSearchInput" />
+    <view onTap="handleSearchButton" class="search-icon"></view>
+  </view>
+  
+  <block a:for="{{userList.users}}" a:for-item="user">
+    <!-- <navigator url="/page/DetailPage/DetailPage?id={{ user.id }}" open-type="navigate"> -->
+      <view class="card" onTap="handleCardTap" data-id={{user.id}}>
+        <image mode="scaleToFill" class="user-image" src="{{user.image}}" alt="User Image" />
+        <view class="card-content">
+          <view class="title">{{user.firstName}} {{user.lastName}}</view>
+          <view class="subTitle">{{user.email}}</view>
+          <view class="info">ID: {{user.id}}</view>
+        </view>
+      </view>
+    <!-- </navigator> -->
+  </block>
+
+  <view onTap="loadMoreData">
+    OnClick
+  </view>
+  <view class="loading" a:if="{{showLoading}}">
+    <text>Loading...</text>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "spotify-card" : "/component/spotifyCard/spotifyCard"
+  },
+  "pullRefresh": true,
+  "showTitleLoading": "NO"
+}

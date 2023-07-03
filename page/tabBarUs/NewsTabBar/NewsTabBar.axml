@@ -1,0 +1,73 @@
+<view class="container">
+  <view class="loading" a:if="{{isLoading}}">
+    <image class="loader" src="/image/loading-spotify-black.gif" />
+    <text></text>
+  </view>
+
+  <swiper autoplay="true" interval="3000" duration="500" a:if="{{!isLoading}}">
+    <block a:for="{{activeTab === 0 ? musicNews.slice(0, 5) : entertainmentNews.slice(0, 5)}}" a:for-item="news">
+      <swiper-item class="swiper-border">
+        <view class="carousel-item" >
+          <view class="carousel-title">
+            <text class="news-the-day">News of the Day</text>
+            <text class="">{{news.title}}</text>
+          </view>
+          <text class="carousel-learn-more" onTap="handleIconTap" data-link="{{news.link}}">Learn More </text>
+          <text class="carousel-arrow" onTap="handleIconTap" data-link="{{news.link}}">→</text>
+          <text class="carousel-title-base"></text>
+          <image class="caraousel-image" src="{{news.media}}"/>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="breaking-news-section" a:if="{{!isLoading}}">
+    <text>Breaking News</text>
+  </view>
+
+  <view class="card-container-hot" a:if="{{!isLoading}}">
+    <scroll-view scroll-x="{{true}}" class="scroll-view">
+      <view a:for="{{musicNews}}" a:for-item="card" class="card-hot">
+        <scroll-view-card-home card="{{card}}" onMyEvent="handleEventTrack"/>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- <view class="tabs {{shadow ? 'shadow' : ''}}" style="top: {{top}}px">
+    <view class="tabs-bar">
+      <block a:for="{{tabs}}">
+        <view class="tabs-bar-tab" data-index="{{index}}" onTap="onTabBarTap">
+          <view class="tabs-bar-tab-title {{activeTab === index ? 'active' : ''}}">{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="list-wrap">
+    <view class="list-container" style="{{ transform: 'translate3d(' +(-activeTab * 100) + 'vw, 0, 0)' }}">
+
+      <view class="list" style="{{ height: activeTab === 0 ? 'auto' : 0 }}">
+        <block a:for="{{musicNews}}" a:for-item="news">
+          <view class="news-card" onTap="handleIconTap" data-link="{{news.link}}">
+            <text class="news-title">{{news.title}}</text>
+            <view class="title-base"></view>
+            <image class="news-image" src="{{news.media}}" />
+          </view>
+        </block>
+      </view>
+
+      <view class="list" style="{{ height: activeTab === 1 ? 'auto' : 0 }}">
+        <block a:for="{{entertainmentNews}}" a:for-item="news">
+          <view class="news-card" onTap="handleIconTap" data-link="{{news.link}}">
+            <text class="news-title">{{news.title}}</text>
+            <view class="title-base"></view>
+            <image class="news-image" src="{{news.media}}" />
+          </view>
+        </block>
+      </view>
+
+
+    </view>
+  </view> -->
+
+</view>

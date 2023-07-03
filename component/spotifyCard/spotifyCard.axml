@@ -1,0 +1,8 @@
+<view class="card" onTap="handleTap" data-track_url="{{playlist.link_tracks_playlist}}" data-image_playlist="{{playlist.image_playlist}}}" data-name_playlist="{{playlist.name_playlist}}">
+  <view class="card-image">
+    <image class="image" src="{{playlist.image_playlist}}"></image>
+  </view>
+  <view class="card-content">
+    <text class="card-title">{{playlist.name_playlist}}</text>
+  </view>
+</view>

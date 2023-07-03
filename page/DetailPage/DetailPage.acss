@@ -1,0 +1,56 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.last-name {
+  font-size: 18px;
+  color: #666666;
+}
+
+.details {
+  font-size: 14px;
+  color: #333333;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.label {
+  width: 120px;
+  font-weight: bold;
+  color: #999999;
+}
+
+.value {
+  flex: 1;
+}

@@ -1,0 +1,4 @@
+<image class="card-image-hot" src="{{card.media}}" mode="aspectFill"/>
+  <text class="card-title-hot" data-link="{{card.link}}" onTap="handleTap">{{card.title}}</text>
+  <text class="card-date-hot">{{card.published_date}}</text>
+  <text class="card-author-hot">By {{card.author}}</text>

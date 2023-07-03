@@ -1,0 +1,45 @@
+.track-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.track-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-title {
+  color: #fff;
+  font-size: 16px;
+  font-family: GothamBold
+}
+
+.track-artist {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-family: GothamBook;
+  margin-top: 5px;
+}
+
+.play-icon {
+  position: absolute;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url("/image/play.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

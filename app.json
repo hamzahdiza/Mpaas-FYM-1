@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "page/SplashScreen/SplashScreen",
+    "page/LoginPage/LoginPage",
+    "page/tabBarUs/NewsTabBar/NewsTabBar",
+    "page/tabBarUs/Spotify/Spotify",
+    "page/tabBarUs/Discover/Discover",
+    "page/TermOfService/TermOfService",
+    "page/testingStore/testingStore"
+  ],
+  "subPackages": [
+    {
+      "root": "page/spotifyPage",
+      "pages": [
+        "SpotifyTracks/SpotifyTracks",
+        "Webview/Webview"
+      ]
+    },
+    {
+      "root": "page/newsPage",
+      "pages": [
+        "NewsHome/NewsHome",
+        "Webview/Webview"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundColor": "white",
+    "showTitleLoading": "NO"
+  },
+  "preloadRule": {
+    "page/tabBarUs/SpotifyTabBar/SpotifyTabBar": {
+      "network": "all",
+      "packages": [
+        "page/spotifyPage"
+      ]
+    },
+    "page/tabBarUs/NewsTabBar/NewsTabBar": {
+      "network": "all",
+      "packages": [
+        "page/NewsHome"
+      ]
+    }
+  },
+  "tabBar": {
+    "textColor": "#FFFFFF",
+    "selectedColor": "#46FF4B",
+    "backgroundColor": "#121212",
+    "items": [
+      {
+        "pagePath": "page/tabBarUs/Spotify/Spotify",
+        "icon": "image/tabbar-spotify-0.png",
+        "activeIcon": "image/tabbar-spotify-1.png",
+        "name": "Spotify"
+      },
+      {
+        "pagePath": "page/tabBarUs/NewsTabBar/NewsTabBar",
+        "icon": "image/tabbar-home-0.png",
+        "activeIcon": "image/tabbar-home-1.png",
+        "name": "Home"
+      },
+      {
+        "pagePath": "page/tabBarUs/Discover/Discover",
+        "icon": "image/tabbar-discover-0.png",
+        "activeIcon": "image/tabbar-discover-1.png",
+        "name": "Discover"
+      }
+    ]
+  }
+}

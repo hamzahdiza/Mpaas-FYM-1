@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "scroll-view-card-home" : "/component/scrollViewCardHome/scrollViewCardHome"
+  },
+  "pullRefresh": true,
+  "transparentTitle": "always",
+  "backgroundColor": "white"
+}

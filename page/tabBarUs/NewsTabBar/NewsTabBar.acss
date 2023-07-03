@@ -1,0 +1,254 @@
+
+.container {
+  background-color: #fff;
+  font-family: GothamBook;
+  min-height: 100vh;
+}
+
+.swiper {
+  height: 250rpx;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 370px;
+}
+
+.swiper-border {
+  border-radius: 0px 0px 46px 46px
+}
+
+.caraousel-image {
+  width: 100%;
+  height: 100%;
+  background-color: turquoise;
+  object-fit: fill;
+}
+
+.barrier-image {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-title {
+  position: absolute;
+  bottom: 70px;
+  color: white;
+  padding: 15px 25px 10px 25px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  font-family: GothamBold;
+  font-size: 22px;
+}
+
+.news-the-day {
+  display: block;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 120px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 20px;
+  word-break: break-all;
+  font-family: GothamBook;
+  margin-bottom: 15px;
+}
+
+.carousel-learn-more {
+  position: absolute;
+  bottom: 28px;
+  color: white;
+  padding: 15px 25px 10px 25px;
+  box-sizing: border-box;
+  z-index: 2;
+  font-family: GothamBook;
+  font-size: 18px;
+  font-weight: bold;
+  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+}
+
+.carousel-arrow {
+  position: absolute;
+  bottom: 32px;
+  left: 110px;
+  color: white;
+  padding: 15px 25px 0px 25px;
+  z-index: 2;
+  font-family: GothamBook;
+  font-size: 34px;
+  font-weight:bolder;
+}
+
+.carousel-title-base {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 10px 10px 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color:  rgba(0, 0, 0, 0.4);
+}
+
+.tabs {
+  height: 92rpx;
+  position: sticky;
+  background-color: #fff;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.tabs.shadow {
+  box-shadow: rgba(153, 153, 153, 0.24) 0 2px 7px;
+}
+
+.tabs-bar {
+  padding: 0 64rpx;
+  display: flex;
+  height: 100%;
+
+}
+
+.tabs-bar-tab {
+  bottom: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-bar-tab {
+  font-size: 32rpx;
+}
+
+.tabs-bar-tab-title {
+  color: #999;
+  padding: 16rpx 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+.tabs-bar-tab-title.active {
+  font-weight: bold;
+  color: #1371F7;
+  border-bottom: 3px solid #1371F7;
+}
+
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  width: 95%;
+  border-radius: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-image {
+  width: 100%;
+  background-color: turquoise;
+  object-fit: contain;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.news-title {
+  font-family: GothamBold;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  padding: 0px 50px 10px 50px;
+  width: 95%;
+  text-align: justify;
+  margin: auto;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 2;
+
+}
+
+.title-base {
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  padding: 10rpx;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.breaking-news-section {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  font-family: Montserrat-Black;
+  margin-top: 20px;
+  margin-bottom:10px;
+  letter-spacing: 0.5rpx;
+}
+
+/* 10 Card */
+.card-container-hot {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.scroll-view {
+  white-space: nowrap;
+}
+
+.card-hot {
+  display: inline-block;
+  width: 250px;
+  height: 320px;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 40px;
+  background-color: #ffffff;
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  /* animation: popup-animation 1s ease-in-out; */
+}
+
+@keyframes popup-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

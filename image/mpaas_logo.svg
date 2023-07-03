@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>蓝色（用于白色背景）</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.49008 0.55536 0.51744 0.57168 0.54624 0.55536"></polygon>
+        <polygon id="path-3" points="0.49008 0.55536 0.51744 0.57168 0.54624 0.55536"></polygon>
+    </defs>
+    <g id="蓝色（用于白色背景）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组备份" transform="translate(40.000000, 42.000000)">
+            <g id="编组" transform="translate(7.200000, 77.862720)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-1" mask="url(#mask-2)" points="0.49008 0.55536 0.51744 0.57168 0.54624 0.55536"></polygon>
+            </g>
+            <polygon id="Fill-3" fill="#6ACAED" points="59.952096 46.250112 19.800096 23.003712 9.6e-05 34.665792 59.952096 69.153312 119.867136 34.434432 99.843936 22.874112"></polygon>
+            <polygon id="Fill-4" fill="#017AAE" points="20.192976 115.30272 39.846576 103.70544 39.846576 61.69872 20.192976 51.16704"></polygon>
+            <polygon id="Fill-5" fill="#06B9E3" points="80.067744 61.698864 80.067744 103.832784 99.940224 115.302864 99.940224 51.167184"></polygon>
+            <polygon id="Fill-6" fill="#02BCE2" points="0 103.716912 20.15616 115.302672 20.15616 68.845872 59.952 92.401392 59.952 69.153552 0 34.649232"></polygon>
+            <polygon id="Fill-7" fill="#017FB1" points="59.93352 69.167712 59.93352 92.230752 99.86664 68.764032 99.86664 115.263552 120.00024 103.717152 119.8668 34.434432"></polygon>
+            <polygon id="Fill-8" fill="#6ACAED" points="60.114192 0.000192 40.103472 11.385312 60.115152 23.130432 80.076912 11.600832 60.115632 0.000192"></polygon>
+            <polygon id="Fill-9" fill="#02BCE2" points="60.090192 34.425408 60.090192 23.044128 40.103472 11.308128 40.103472 23.096448"></polygon>
+            <polygon id="Fill-10" fill="#017FB1" points="60.090192 34.431744 60.090192 23.050464 80.076912 11.314464 80.076912 23.102784"></polygon>
+            <g id="编组" transform="translate(7.200000, 77.862720)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-12"></g>
+                <polygon id="Fill-11" mask="url(#mask-4)" points="0.49008 0.55536 0.51744 0.57168 0.54624 0.55536"></polygon>
+            </g>
+            <polygon id="Fill-13" fill="#92C9FF" points="59.952096 46.250112 19.800096 23.003712 9.6e-05 34.665792 59.952096 69.153312 119.867136 34.434432 99.843936 22.874112"></polygon>
+            <polygon id="Fill-14" fill="#0074FF" points="20.192976 115.30272 39.846576 103.70544 39.846576 61.69872 20.192976 51.16704"></polygon>
+            <polygon id="Fill-15" fill="#43AAFF" points="80.067744 61.698864 80.067744 103.832784 99.940224 115.302864 99.940224 51.167184"></polygon>
+            <polygon id="Fill-16" fill="#43AAFF" points="0 103.716912 20.15616 115.302672 20.15616 68.845872 59.952 92.401392 59.952 69.153552 0 34.649232"></polygon>
+            <polygon id="Fill-17" fill="#0074FF" points="59.93352 69.167712 59.93352 92.230752 99.86664 68.764032 99.86664 115.263552 120.00024 103.717152 119.8668 34.434432"></polygon>
+            <polygon id="Fill-18" fill="#92C9FF" points="60.114192 0.000192 40.103472 11.385312 60.115152 23.130432 80.076912 11.600832 60.115632 0.000192"></polygon>
+            <polygon id="Fill-19" fill="#43AAFF" points="60.090192 34.425408 60.090192 23.044128 40.103472 11.308128 40.103472 23.096448"></polygon>
+            <polygon id="Fill-20" fill="#0074FF" points="60.090192 34.431744 60.090192 23.050464 80.076912 11.314464 80.076912 23.102784"></polygon>
+        </g>
+    </g>
+</svg>

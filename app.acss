@@ -1,0 +1,174 @@
+page {
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 24rpx;
+  padding: 32rpx;
+  flex: 1;
+}
+
+.page-description {
+  margin-bottom: 32rpx;
+}
+
+.page-section {
+  background: #fff;
+  margin-bottom: 32rpx;
+}
+
+.page-section-title {
+  padding: 16rpx 32rpx;
+}
+
+.page-section-demo {
+  padding: 32rpx;
+}
+
+.page-section-btns {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-section-btns > view {
+  flex: 1;
+  height: 84rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #49a9ee;
+}
+.page-section-btns > view + view {
+  border-left: 1px solid #ddd;
+}
+
+button {
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+
+.bc_blue {
+  background-color: #49A9EE;
+}
+
+.bc_red {
+  background-color: #F04134;
+}
+
+.bc_yellow {
+  background-color: #FFBF00;
+}
+
+.bc_green {
+  background-color: #00A854;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 88rpx;
+  align-items: center;
+}
+
+.form-row-label {
+  width: 180rpx;
+  font-size: 34rpx;
+  margin-right: 10rpx;
+  text-align: left;
+  color: #000;
+}
+
+.form-row-content {
+  flex: 1;
+  font-size: 34rpx;
+}
+
+.form-line {
+  height: 1px;
+  background-color: #ddd;
+  margin-left: 30rpx;
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("./fonts/GothamBold.ttf");
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("./fonts/GothamBook.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("./fonts/montserrat/Montserrat-Black.ttf");
+}
+@font-face {
+  font-family: "Montserrat-BlackItalic";
+  src: url("./fonts/montserrat/Montserrat-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-BoldItalic";
+  src: url("./fonts/montserrat/Montserrat-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("./fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraBoldItalic";
+  src: url("./fonts/montserrat/Montserrat-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("./fonts/montserrat/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraLightItalic";
+  src: url("./fonts/montserrat/Montserrat-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url("./fonts/montserrat/Montserrat-Italic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./fonts/montserrat/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-LightItalic";
+  src: url("./fonts/montserrat/Montserrat-LightItalic.ttf");
+}
+@font-face {
+  font-family: "c";
+  src: url("./fonts/montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat-MediumItalic";
+  src: url("./fonts/montserrat/Montserrat-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  src: url("./fonts/montserrat/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("./fonts/montserrat/Montserrat-Thin.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ThinItalic";
+  src: url("./fonts/montserrat/Montserrat-ThinItalic.ttf");
+}
